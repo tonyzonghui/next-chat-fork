@@ -41,6 +41,7 @@ dev
 
 # docker-compose env files
 .env
+.env.*
 
 *.key
 *.key.pub
@@ -49,3 +50,5 @@ masks.json
 
 # mcp config
 app/mcp/mcp_config.json
+
+run.sh

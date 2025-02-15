@@ -61,9 +61,9 @@ const DEFAULT_SILICONFLOW_URL = isApp
 
 const DEFAULT_ACCESS_STATE = {
   accessCode: "",
-  useCustomConfig: false,
+  useCustomConfig: true,
 
-  provider: ServiceProvider.OpenAI,
+  provider: ServiceProvider.SiliconFlow,
 
   // openai
   openaiUrl: DEFAULT_OPENAI_URL,
@@ -129,8 +129,8 @@ const DEFAULT_ACCESS_STATE = {
   chatglmApiKey: "",
 
   // siliconflow
-  siliconflowUrl: DEFAULT_SILICONFLOW_URL,
-  siliconflowApiKey: "",
+  siliconflowUrl: SILICONFLOW_BASE_URL,
+  siliconflowApiKey: process.env.SILICONFLOW_API_KEY ?? "",
 
   // server config
   needCode: true,
@@ -138,8 +138,8 @@ const DEFAULT_ACCESS_STATE = {
   hideBalanceQuery: false,
   disableGPT4: false,
   disableFastLink: false,
-  customModels: "",
-  defaultModel: "",
+  customModels: "deepseek-ai/DeepSeek-R1,Qwen/Qwen2.5-72B-Instruct-128K",
+  defaultModel: "deepseek-ai/DeepSeek-R1,Qwen/Qwen2.5-72B-Instruct-128K",
   visionModels: "",
 
   // tts config
